@@ -1,6 +1,6 @@
-import { text as hu } from './hu'
+import { common } from './common'
 
-export const text = Object.assign(hu, {
+export const text = Object.assign({}, common, {
   more: 'Read more',
   next: 'Next',
 

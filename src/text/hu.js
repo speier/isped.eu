@@ -1,6 +1,6 @@
 import { common } from './common'
 
-export const text = Object.assign(common, {
+export const text = Object.assign({}, common, {
   more: 'Bővebben',
   next: 'Tovább',
 
