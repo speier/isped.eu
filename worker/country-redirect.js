@@ -13,6 +13,12 @@ const redirect = async (request) => {
       }
     })
   }
+
+  let response = await fetch(request)
+  response = new Response(response.body, response)
+  response.headers.set('set-cookie', 'returning=true')
+
+  return response
 }
 
 addEventListener('fetch', (event) => {
