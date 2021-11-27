@@ -165,9 +165,9 @@ textarea {
   width: device-width;
 }
 
-/* body {
-  -ms-overflow-style: scrollbar;
-} */
+body {
+  -ms-overflow-style: none;
+}
 
 @media screen and (max-width: 480px) {
   html,
