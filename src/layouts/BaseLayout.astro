@@ -34,19 +34,21 @@ const { t } = Astro.props;
     <div id="wrapper">	
         <!-- Intro -->
         <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h1 class="title-name">{t.introTitle}</h1>
-                <p>{t.introBody}</p>
-                <ul class="actions">
-                    <li><a href="#who" class="button scrolly">{t.more}</a></li>
-                </ul>
+            <div class="wrapper fullscreen truck-bg">
+                <div class="inner">
+                    <h1 class="title-name-shadow">{t.introTitle}</h1>
+                    <p class="title-body-shadow">{t.introBody}</p>
+                    <ul class="actions">
+                        <li><a href="#who" class="button scrolly">{t.more}</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- Who we are -->
         <section id="who" class="wrapper style2 spotlights">
             <section>
-                <a href="#" class="image"><img src="/images/truck_transportation.jpeg" alt="" data-position="center center" /></a>
+                <a href="#what" class="image scrolly"><img src="/images/truck_transportation.jpeg" alt="" data-position="center center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>{t.bestSolutionTitle}</h2>
@@ -58,7 +60,7 @@ const { t } = Astro.props;
                 </div>
             </section>
             <section>
-                <a href="#" class="image"><img src="/images/road_transportation.png" alt="" data-position="top center" /></a>
+                <a href="#what" class="image scrolly"><img src="/images/road_transportation.png" alt="" data-position="top center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>{t.bestFreightForwardersTitle}</h2>
@@ -70,7 +72,7 @@ const { t } = Astro.props;
                 </div>
             </section>
             <section>
-                <a href="#" class="image"><img src="/images/stock_244807532.jpeg" alt="" data-position="25% 25%" /></a>
+                <a href="#what" class="image scrolly"><img src="/images/stock_244807532.jpeg" alt="" data-position="25% 25%" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>{t.logisticsConsultingTitle}</h2>
@@ -150,7 +152,7 @@ const { t } = Astro.props;
                         <ul class="contact">
                             <li>
                                 <h3>Email</h3>
-                                <a href="#">{t.email}</a>
+                                <a href="mailto:${t.email}">{t.email}</a>
                             </li>
                             <li>
                                 <h3>{t.phoneTitle}</h3>
